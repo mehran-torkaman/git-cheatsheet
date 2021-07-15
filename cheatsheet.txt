@@ -1,0 +1,48 @@
+################################
+#  Git Cheatsheet
+################################
+
+1- Why we use version controling tools like git?
+   As a devops engineer we are dealing with codes and for controling them we need to use tools like git.
+
+2- What is a repository? what important files should be in a repository?
+  A repository is a place for storing our commits and branches. and a good repository should have 3 differente files which are:
+  1: README.md 2: LICENSE 3: .gitignore
+
+3- What are the main parts in a good documentation?
+  A good documentation consist of :
+  1- what are the goal of this project and what does it do.
+  2- how can you use it.
+  3- how can you contribute on this project.(optional) 
+
+4- What does "git clone" do?
+  if we like someone's project on github and we want to save it on our local system we use this command.
+
+5- How can we synchronize our local-repository with remote-repository?
+  git pull/push <remote-repository>
+
+6- What are the differences between checkout,revert,reset?
+  we use checkout for move between branches, if we want to cansel our commit to last commit without affecting on our working-tree we use reset but if we
+  want to erase all of our changes with commit and working-tree but we want to know the reason and time-line in log, we use revert.
+
+7- What are the difference between merge and rebase?
+  the merge operation interwined the branches together by creating a new single merge commit but compare to rebase for example if have two commits in
+  feature branch and we want to interwined featue branch with master, the two commits simply got rewind and reapply on top of master featue, keeping
+  the history linear.
+
+8- What command is used for viewing the history of commits?
+  git log
+
+9- What command is used for viewing the changes on a file?
+  git diff HEAD
+
+10- What is the application of "tag"? how can we create tag?
+  for make release we use tag. using this command: git tag <version-number>
+
+11- What is the procedure of contributing on a project that managed by git?
+  first we have to clone the project using "git clone" command. after that we have project on our system, we start developing. after that we make changes on 
+  project it's time to merge with master branch. finally for sinchronizing between local-repo and remote-repo we use "git push/pull" command.
+
+12- What we use branches and how can we merge them?
+  it depends on developing style of the team and we can use different branches for developing different part of the codebase and for merging branches together
+  we use "git merge/rebase" command
